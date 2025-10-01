@@ -529,6 +529,7 @@ h2.section-heading {
 .big-call-to-action {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 .big-call-to-action video {
