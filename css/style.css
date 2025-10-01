@@ -70,8 +70,12 @@ header {
 
 .main-navigation nav a:hover {
     color: var(--green-color);
-
 }
+
+.main-navigation img {
+    filter: drop-shadow(0 0 10px var(--black-color));
+}
+
 
 .secondary-cta-btn {
     padding: 15px 20px;
@@ -82,6 +86,7 @@ header {
     align-items: center;
     gap: 5px;
     position: relative;
+    background-color: var(--black-color);
 }
 
 .secondary-cta-btn:hover {
@@ -256,9 +261,86 @@ h2.section-heading {
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-top: 60px;
+}
 
+.portfolio-items .portfolio-item a .portfolio-tags {
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio-items .portfolio-item a .portfolio-tags div {
+    font-size: 1.125rem;
+    background-color: var(--border-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 300;
 }
 
 .portfolio-items .portfolio-item a video {
     width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.portfolio-items .portfolio-item a .portfolio-content-wrapper {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.portfolio-items .portfolio-item a .portfolio-content-wrapper h3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.portfolio-items .portfolio-item a .portfolio-content-wrapper p {
+    font-weight: 300;
+}
+
+.portfolio-items .portfolio-item a {
+    position: relative;
+}
+
+.portfolio-items .portfolio-item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio-items .portfolio-item a:hover::after {
+    opacity: 1;
+    background: radial-gradient(circle, rgba(var(--rgb-green), 0.2) 0%, rgba(var(--rgb-black), 0) 100%);
+}
+
+.portfolio-items .portfolio-item::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 0%, rgba(28, 28, 28, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.call-to-action {
+    padding: 100px 0;
+}
+
+.call-to-action p {
+    font-weight: 300;
+    font-size: 3.125rem;
+    margin-bottom: 50px;
+}
+
+.call-to-action p span {
+    animation: word-fade 2s both linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+    animation-delay: calc(var(--i) * 100ms);
 }
