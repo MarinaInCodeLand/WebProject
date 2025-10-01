@@ -65,7 +65,6 @@ header {
 
 .main-navigation nav a {
     transition: 0.3s;
-
 }
 
 .main-navigation nav a:hover {
@@ -514,10 +513,99 @@ h2.section-heading {
     color: var(--text-color);
 }
 
+.blog-items .blog-item:hover a {
+    display: block;
+    animation: blur-effect 0.5s both;
+}
+
 .dot-separator {
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background-color: var(--white-color);
     display: block;
+}
+
+.big-call-to-action {
+    position: relative;
+    height: 100vh;
+}
+
+.big-call-to-action video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.cta-content-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.cta-content-wrapper .cta-content {
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--border-color);
+    padding: 30px 100px;
+    border-radius: 80px;
+    background-color: rgba(var(--rgb-black), 0.5);
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(150, 209, 176, 1)0%, rgba(198, 198, 198, 1)50%, rgba(150, 209, 176, 1)100%);
+    color: transparent;
+    background-clip: text;
+    transition: 0.3s;
+}
+
+.cta-content-wrapper .cta-content:hover {
+    box-shadow: 0px 0px 32px 0px rgba(var(--rgb-green), 0.75) inset;
+}
+
+.glow-effect {
+    background: linear-gradient(circle,
+            rgba(31, 128, 83, 1) 0%,
+            rgba(31, 128, 83, 0.2) 50%,
+            rgba(31, 128, 83, 0) 100%);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.left-top-position {
+    top: 10%;
+    left: 0;
+}
+
+.right-bottom-position {
+    right: 0;
+    bottom: 5px;
+}
+
+.background-additions {
+    position: absolute;
+    z-index: 2;
+}
+
+
+.left-bottom-position {
+    left: 0;
+    bottom: 5ppx;
+}
+
+.right-top-position {
+    right: 0;
+    top: 10%
 }
