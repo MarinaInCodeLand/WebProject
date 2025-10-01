@@ -470,5 +470,54 @@ h2.section-heading {
 .blog-items .blog-item img {
     width: 100%;
     border-radius: 15px;
+}
 
+.blog-items .blog-item .blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.blog-items .blog-item .blog-content h3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.blog-items .blog-item .blog-content p {
+    font-weight: 300;
+}
+
+.blog-items .blog-item .blog-content .author-wrapper {
+    display: flex;
+    font-size: 1.125rem;
+    justify-content: space-between;
+}
+
+.blog-items .blog-item .blog-content .author-wrapper .author-name-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-items .blog-item .blog-content .author-wrapper .author-name-image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.blog-items .blog-item .blog-content .author-wrapper .published-date-read-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.dot-separator {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: block;
 }
