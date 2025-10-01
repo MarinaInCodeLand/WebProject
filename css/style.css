@@ -249,3 +249,16 @@ h2.section-heading {
 .portfolio .portfolio-header h2.section-heading {
     max-width: 400px;
 }
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+
+}
+
+.portfolio-items .portfolio-item a video {
+    width: 100%;
+}
