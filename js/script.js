@@ -62,3 +62,12 @@
                        : mql.addListener(applyLayout); // older Safari
   applyLayout();
 })();
+
+
+// Dynamic Year
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
+}

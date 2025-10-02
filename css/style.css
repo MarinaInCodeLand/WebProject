@@ -740,7 +740,7 @@ footer .footer-copyright .footer-copyright-wrapper {
         background-color: var(--black-color);
     }
 
-    .nav-toogle {
+    .nav-toggle {
         display: block;
     }
 
@@ -794,5 +794,47 @@ footer .footer-copyright .footer-copyright-wrapper {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+    }
+
+    .main-navigation nav.is-open {
+        max-height: 60vh;
+        padding: 20px 0;
+    }
+
+    .main-navigation nav a:not(.secondary-cta-btn) {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .blog-items {
+        gap: 40px;
+    }
+
+    .blog-items .blog-item:last-child {
+        display: none;
+    }
+
+    h2.section-heading {
+        font-size: 2.7rem;
+    }
+
+    .big-call-to-action .cta-content {
+        font-size: 3.5rem;
+    }
+
+    .service-item .service-item-content {
+        transform: translateY(0);
+    }
+
+    .service-item video {
+        opacity: 1;
+    }
+
+    .service-item a::before {
+        background-color: var(--white-color);
+    }
+
+    .call-to-action p {
+        font-size: 2.7rem;
     }
 }
