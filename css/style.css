@@ -974,6 +974,11 @@ footer .footer-copyright .footer-copyright-wrapper {
         font-size: 0.7rem;
     }
 
+    .dot-separator {
+        width: 3px;
+        height: 3px;
+    }
+
     .cta-content-wrapper .cta-content {
         padding: 30px 70px;
     }
