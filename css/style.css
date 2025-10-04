@@ -969,4 +969,20 @@ footer .footer-copyright .footer-copyright-wrapper {
     .services-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .blog-items .blog-item .blog-content .author-wrapper {
+        font-size: 0.7rem;
+    }
+
+    .cta-content-wrapper .cta-content {
+        padding: 30px 70px;
+    }
+
+    .big-call-to-action .cta-content {
+        font-size: 1.8rem;
+    }
+
+    footer .footer-menu-grid .footer-menu-content {
+        padding: 20px;
+    }
 }
