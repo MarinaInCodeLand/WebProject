@@ -717,8 +717,12 @@ footer .footer-copyright .footer-copyright-wrapper {
     padding: 40px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
+.responsive-cta {
+    display: none;
+}
 
 @media (max-width: 1366px) {
     .hero .hero-content h1 {
@@ -954,5 +958,15 @@ footer .footer-copyright .footer-copyright-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .responsive-remove {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
