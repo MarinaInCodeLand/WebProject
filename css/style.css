@@ -970,8 +970,11 @@ footer .footer-copyright .footer-copyright-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .blog-items .blog-item .blog-content p {
+    /* .blog-items .blog-item .blog-content p {
         font-weight: 100;
+    } */
+    .blog-items .blog-item .blog-content .author-wrapper {
+        font-size: 0.8rem;
     }
 
     .dot-separator {
