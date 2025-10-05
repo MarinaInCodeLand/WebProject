@@ -812,6 +812,12 @@ footer .footer-copyright .footer-copyright-wrapper {
         padding: 10px 0;
     }
 
+    /* naknadno dodala */
+    .portfolio-items .portfolio-item a .portfolio-content-wrapper p {
+        text-align: left;
+        text-justify: inter-word;
+    }
+
     .blog-items {
         gap: 40px;
     }
@@ -972,9 +978,6 @@ footer .footer-copyright .footer-copyright-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* .blog-items .blog-item .blog-content p {
-        font-weight: 100;
-    } */
     .blog-items .blog-item .blog-content .author-wrapper {
         font-size: 0.7rem;
     }
