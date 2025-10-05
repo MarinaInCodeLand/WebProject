@@ -315,8 +315,8 @@ h2.section-heading {
 
 .portfolio-items .portfolio-item a .portfolio-content-wrapper p {
     font-weight: 300;
-    text-align: justify;
-    text-justify: inter-word;
+    /* text-align: justify;
+    text-justify: inter-word; */
 }
 
 .portfolio-items .portfolio-item a {
@@ -810,12 +810,6 @@ footer .footer-copyright .footer-copyright-wrapper {
     .main-navigation nav a:not(.secondary-cta-btn) {
         display: block;
         padding: 10px 0;
-    }
-
-    /* naknadno dodala */
-    .portfolio-items .portfolio-item a .portfolio-content-wrapper p {
-        text-align: left;
-        text-justify: inter-word;
     }
 
     .blog-items {
