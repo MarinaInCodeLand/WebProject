@@ -315,6 +315,8 @@ h2.section-heading {
 
 .portfolio-items .portfolio-item a .portfolio-content-wrapper p {
     font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .portfolio-items .portfolio-item a {
